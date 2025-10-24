@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Example Product — Brand Name</title>
+  <meta name="description" content="Short, unique description of the product or page (120–160 characters)." />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="canonical" href="https://example.com/product/123" />
+  <!-- Open Graph -->
+  <meta property="og:title" content="Example Product — Brand Name" />
+  <meta property="og:description" content="Short description to improve social sharing." />
+  <meta property="og:image" content="https://example.com/assets/product-123.jpg" />
+  <meta property="og:url" content="https://example.com/product/123" />
+  <meta property="og:type" content="product" />
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <!-- Structured Data (JSON-LD example for Product) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org/",
+    "@type": "Product",
+    "name": "Example Product",
+    "image": [
+      "https://example.com/assets/product-123.jpg"
+     ],
+    "description": "One-line product description that matches page content.",
+    "sku": "12345",
+    "brand": {
+      "@type": "Brand",
+      "name": "Brand Name"
+    },
+    "offers": {
+      "@type": "Offer",
+      "url": "https://example.com/product/123",
+      "priceCurrency": "USD",
+      "price": "29.99",
+      "availability": "https://schema.org/InStock"
+    }
+  }
+  </script>
+</head>
+<body>
+  <h1>Example Product</h1>
+  <img src="/assets/product-123.jpg" alt="Example Product — angle view" />
+  <p>Product description...</p>
+</body>
+</html>

@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>SEO Optimization for a Website — Example</title>
+  <meta name="description" content="Practical example of an SEO-optimized HTML template with structured data, Open Graph and performance-friendly HTML/CSS.">
+  <link rel="canonical" href="https://example.com/">
+  <meta name="robots" content="index, follow">
+  <meta name="author" content="Your Name">
+  <!-- Open Graph -->
+  <meta property="og:title" content="SEO Optimization for a Website — Example">
+  <meta property="og:description" content="Practical example of an SEO-optimized HTML template with structured data, Open Graph and performance-friendly HTML/CSS.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://example.com/">
+  <meta property="og:image" content="https://example.com/og-image.jpg">
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="SEO Optimization for a Website — Example">
+  <meta name="twitter:description" content="Practical example of an SEO-optimized HTML template with structured data, Open Graph and performance-friendly HTML/CSS.">
+
+  <!-- Structured Data (JSON-LD) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "url": "https://example.com/",
+        "name": "SEO Optimization Example",
+        "potentialAction": {
+          "@type": "SearchAction",
+          "target": "https://example.com/?s={search_term_string}",
+          "query-input": "required name=search_term_string"
+        }
+      },
+      {
+        "@type": "Organization",
+        "name": "Example Organization",
+        "url": "https://example.com/",
+        "logo": "https://example.com/logo.png"
+      }
+    ]
+  }
+  </script>
+
+  <!-- Minimal, performance-friendly CSS -->
+  <style>
+    :root{
+      --brand:#0b5fff; --muted:#6b7280; --bg:#ffffff; --maxw:1100px;
+      --radius:8px;
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%;margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,'Helvetica Neue',Arial;color:#111;background:var(--bg);-webkit-font-smoothing:antialiased}
+    .container{max-width:var(--maxw);margin:32px auto;padding:24px}
+    header{display:flex;align-items:center;gap:16px}
+    .logo{width:48px;height:48px;background:linear-gradient(135deg,var(--brand),#2dd4bf);border-radius:8px;display:flex;align-items:center;justify-content:center;color:#fff;font-weight:700}
+    nav ul{list-style:none;padding:0;margin:0;display:flex;gap:12px}
+    nav a{color:var(--brand);text-decoration:none;font-weight:600}
+    main{margin-top:20px}
+    h1{font-size:clamp(1.6rem,2.5vw,2.2rem);margin:0 0 8px}
+    p.lead{color:var(--muted);margin:0 0 20px}
+    article{background:#f9fafb;padding:18px;border-radius:var(--radius);border:1px solid #eef2ff}
+    .feature-list{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px;margin:18px 0 0}
+    .card{padding:12px;border-radius:8px;background:#fff;border:1px solid #eef2ff}
+    footer{margin-top:28px;color:var(--muted);font-size:0.9rem}
+    a.cta{display:inline-block;padding:10px 14px;background:var(--brand);color:#fff;border-radius:8px;text-decoration:none}
+    img{max-width:100%;height:auto;display:block}
+    /* Accessibility helpers */
+    .sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+    @media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="logo" aria-hidden="true">SEO</div>
+      <div>
+        <h2 class="sr-only">SEO Optimization Example Site</h2>
+        <nav aria-label="Primary navigation">
+          <ul>
+            <li><a href="/" title="Home">Home</a></li>
+            <li><a href="/blog" title="Blog">Blog</a></li>
+            <li><a href="/guides" title="Guides">Guides</a></li>
+            <li><a href="/contact" title="Contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <h1>SEO-Optimized HTML Template</h1>
+      <p class="lead">A concise, accessible, and search-engine-friendly example template — includes structured data, meta tags, semantic markup, and performance best practices.</p>
+
+      <article aria-labelledby="article-heading">
+        <h2 id="article-heading">Key SEO features in this template</h2>
+        <ul>
+          <li>Semantic HTML5 elements (header, nav, main, article, footer)</li>
+          <li>Responsive, mobile-first meta viewport</li>
+          <li>Descriptive title and meta description</li>
+          <li>Canonical URL and robots meta</li>
+          <li>Open Graph and Twitter Card metadata for social sharing</li>
+          <li>JSON-LD structured data for WebSite and Organization</li>
+          <li>Accessible, descriptive link text and alt attributes on images</li>
+          <li>Performance-friendly: small CSS, lazy-loading images</li>
+        </ul>
+
+        <div class="feature-list">
+          <div class="card">
+            <h3>Structured Data</h3>
+            <p class="muted">Search engines can better understand your content with JSON-LD.</p>
+          </div>
+          <div class="card">
+            <h3>Social Preview</h3>
+            <p class="muted">Open Graph tags improve how links appear on social platforms.</p>
+          </div>
+          <div class="card">
+            <h3>Performance</h3>
+            <p class="muted">Fast, mobile-first pages rank better and reduce bounce rates.</p>
+          </div>
+        </div>
+
+        <figure style="margin-top:16px">
+          <img src="https://example.com/hero.jpg" alt="Screenshot of an example SEO-optimized page" loading="lazy">
+          <figcaption class="muted">Example page screenshot (use your own optimized images).</figcaption>
+        </figure>
+
+        <section style="margin-top:16px">
+          <h3>On-page optimization tips</h3>
+          <ol>
+            <li>Use a unique, descriptive title and meta description per page.</li>
+            <li>Organize content with headings (H1, H2, H3) and keep them hierarchical.</li>
+            <li>Use descriptive, keyword-rich but natural filenames and alt text for images.</li>
+            <li>Implement structured data where it provides value (articles, products, FAQs).</li>
+            <li>Ensure mobile friendliness and fast load times (compress images, defer JS).</li>
+          </ol>
+        </section>
+
+        <p style="margin-top:16px">Example internal links:</p>
+        <nav aria-label="Example internal links">
+          <ul>
+            <li><a href="/guides/seo-basics" title="SEO Basics guide">SEO Basics guide</a></li>
+            <li><a href="/guides/content-strategy" title="Content strategy">Content strategy</a></li>
+          </ul>
+        </nav>
+
+      </article>
+
+      <footer>
+        <p>© 2025 Example Organization — <a href="/privacy">Privacy Policy</a></p>
+      </footer>
+    </main>
+  </div>
+</body>
+</html>
